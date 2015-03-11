@@ -55,7 +55,7 @@ EventHandler.prototype._mappedEvents;
  * attach a listener and an event handler to an element
  * NOTE : only ONE callback can be assigned to a specific type
  *
- * @param {Element|EventHandler} aElement
+ * @param {Element|EventDispatcher} aElement
  * @param {string} aType
  * @param {!Function} aCallback
  *
@@ -85,7 +85,7 @@ EventHandler.prototype.addEventListener = function( aElement, aType, aCallback )
  *
  * @public
  *
- * @param {Element} aElement
+ * @param {Element|EventDispatcher} aElement
  * @param {string} aType
  *
  * @return {boolean} whether the listener has been found and removed
@@ -120,7 +120,7 @@ EventHandler.prototype.removeEventListener = function( aElement, aType )
  * query whether a listener for a specific event type has already
  * been registered for the given element
  *
- * @param {Element} aElement
+ * @param {Element|EventDispatcher} aElement
  * @param {string} aType
  *
  * @return {boolean} whether the listener already exists
@@ -134,7 +134,7 @@ EventHandler.prototype.hasEventListener = function( aElement, aType )
         var theMapping = this._mappedEvents[ i ];
 
         if ( theMapping.element === aElement &&
-             theMapping.type === aType )
+             theMapping.type    === aType )
         {
             return true;
         }
