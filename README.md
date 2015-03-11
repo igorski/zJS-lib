@@ -1,7 +1,13 @@
 # zjslib...
 
-...is a small library of utilities providing wrappers for DOM manipulation, a easily disposable listener interface as well
-as patterns that aid in a OOP-style of programming.
+...is a small library of utilities providing an abstraction to the DOM layer (see _Sprite_), allowing you to separate the logic of your application from the HTML document. Additionally, the library provides an easily disposable listener interface as well as prototypes that should work for both functional or object oriented programming patterns.
+
+Projects using this library :
+
+[WebSID](http://www.igorski.nl/experiment/websid "WebSID"),
+[RDBOHL](http://www.raaddebandofhetlied.nl "RDBOHL")...
+
+amongst others.
 
 ## requirements
 
@@ -20,13 +26,13 @@ memory leaks.
 
 The prototype provides a "public method" :
 
-    dispose()
+    dispose();
 
-Which will invoke its "internal" :
+Which will invoke this "internal" method :
 
     disposeInternal()
 
-handler, which should be overridden in your derived prototypes to include custom cleanup logic.
+which should be overridden in your derived prototypes to include custom cleanup logic. The "dispose()"-method should not be overridden as it ensures that no subsequent calls to the same cleanup routine are made.
 
 ## Event
 
