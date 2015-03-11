@@ -1,0 +1,17 @@
+{
+  "name": "zjslib",
+  "version": "0.1.0",
+  "description": "minimal JavaScript library providing utilities providing OOP-style programming patterns, a listener interface and DOM wrappers",
+  "author": "Igor Zinken",
+  "license": "MIT",
+  "directories" : {},
+  "main" : "zjslib.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igorski/zJS-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igorski/zJS-lib/issues"
+  },
+  "homepage": "https://github.com/igorski/zJS-lib"
+}

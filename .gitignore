@@ -1,0 +1,9 @@
+*.idea
+*.iml
+*.project
+*.settings
+intelliJ project/
+node_modules/
+*.log
+Thumbs.db
+DS_Store
