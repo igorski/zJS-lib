@@ -13,6 +13,12 @@ amongst others.
 
 zjslib is written for node.js projects and uses CommonJS to resolve its dependencies. You can use a tool like Browserify to build the code for use in a webbrowser.
 
+## installation
+
+You can get zjslib via NPM:
+
+    npm install zjslib
+
 ## DOM
 
 Provides utilities for working with DOM contents, e.g. calculate positions, dimensions, etc.
