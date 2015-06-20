@@ -657,6 +657,30 @@ Sprite.prototype.hasChild = function( aChild )
 };
 
 /**
+ * @public
+ *
+ * @param {string} aString tag, class (prefix with .) or id (prefix with #)
+ *        of element that is a child of this Sprites element
+ * @return {Element}
+ */
+Sprite.prototype.select = function( aString )
+{
+    return this._element.querySelector( aString );
+};
+
+/**
+ * @public
+ *
+ * @param {string} aString tag, class (prefix with .) or id (prefix with #)
+ *        of element that is a child of this Sprites element
+ * @return {Element}
+ */
+Sprite.prototype.selectAll = function( aString )
+{
+    return this._element.querySelectorAll( aString );
+};
+
+/**
  * retrieve the x- and y coordinate for this Sprites HTML element
  * (relative to the document)
  *
