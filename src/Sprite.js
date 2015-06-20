@@ -673,11 +673,11 @@ Sprite.prototype.select = function( aString )
  *
  * @param {string} aString tag, class (prefix with .) or id (prefix with #)
  *        of element that is a child of this Sprites element
- * @return {Element}
+ * @return {Array.<Element>}
  */
 Sprite.prototype.selectAll = function( aString )
 {
-    return this._element.querySelectorAll( aString );
+    return /** @type {Array.<Element>} */ ( this._element.querySelectorAll( aString )); // technically NodeList
 };
 
 /**

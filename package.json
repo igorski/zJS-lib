@@ -1,6 +1,6 @@
 {
   "name": "zjslib",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "minimal JavaScript library providing utilities providing OOP-style programming patterns, a listener interface and DOM wrappers",
   "author": "Igor Zinken",
   "license": "MIT",
