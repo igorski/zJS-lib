@@ -129,6 +129,10 @@ EventDispatcher.prototype.dispatchEvent = function( aEvent )
  */
 EventDispatcher.prototype._findListenerByType = function( aType )
 {
+    if ( !( this._eventMap instanceof Array )) {
+        throw new Error( "EventDispatcher has nog event map (forgot Inheritance.super() in constructor?)" );
+    }
+
     var i = this._eventMap.length;
 
     while ( i-- )
